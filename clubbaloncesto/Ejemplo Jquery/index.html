@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Baloncesto</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <main class="contenedor">
+        <form action="#" id="formulario-tabla">
+
+            <fieldset class="titulo-tabla ">
+                <div class="barra-titulo centrar-texto">
+                    <h1>Club de baloncesto</h1>
+                </div>
+
+                <table id="u-tabla" >
+                    <div class="barra-secundaria">
+                        <tr class="centrar-items barra-subtitulo">
+                        <th ">N° de socio</th>
+                        <th>Nombre</th>
+                        <th ">Estatura</th>
+                        <th ">Edad</th>
+                        <th>Localidad</th>
+                        </tr>
+                        
+                        <tr class="centrar-items">
+                        <th "> <input type="number" name="socio" id="socio" size="5" min="0" max="999"> </th>
+                        <th> <input type="text" name="nombre" id="nombre"> </th>
+                        <th "> <input type="number" name="estatura" id="estatura" size="5" min="0" max="300"></th>
+                        <th "> <input type="number" name="edad" id="edad" size="5" min="0" max="99"></th>
+                        <th> <input type="text" name="localidad" id="localidad"> </th>
+                        <th> <input type="submit" value="Añadir" class="boton boton-azul"> </th>
+                        </tr>
+                    </div>
+    
+                    </table>
+
+            </fieldset>
+
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/logic.js"></script>
+</body>
+
+</html>
