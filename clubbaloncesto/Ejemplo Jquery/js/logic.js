@@ -19,8 +19,8 @@ function agregarUsuario() {
             '<td>'+estatura.val()+'</td>'+
             '<td>'+edad.val()+'</td>'+
             '<td>'+localidad.val()+'</td>'+
-            '<td><input type="submit" name="edit" class="editar boton" value="Modificar">' +
-            '<input type="submit" class="eliminar boton" value="Eliminar"></td>' +
+            '<td><input type="submit" name="edit" class="editar boton boton-verde" value="Modificar">' +
+            '<input type="submit" class="eliminar boton boton-rojo" value="Eliminar"></td>' +
             '</tr>'
         );
 
@@ -54,8 +54,8 @@ function editarUsuario(){
         var aLocalidad = tdLocalidad.html();
         tdLocalidad.html('<input type="text" name="localidad" id="localidad" value="'+aLocalidad+'">')
 
-        tdOpciones.html("<a href='#' class='guardar button'>Guardar</a>" +
-        "<a href='#' class='eliminar button'>Eliminar</a>");
+        tdOpciones.html('<td><input type="submit" name="edit" class="guardar boton boton-verde" value="Guardar">' +
+        '<input type="submit" class="eliminar boton boton-rojo" value="Eliminar"></td>');
 
     } )
 }
@@ -82,8 +82,8 @@ function guardarEdicionUsuario() {
         nuevoLocalidad = tdLocalidad.children("input[type=text]").val();
         tdLocalidad.html(nuevoLocalidad);
 
-        tdOpciones.html("<a href='#' class='editar button'>Editar</a>" +
-            "<a href='#' class='eliminar button'>Eliminar</a>");
+        tdOpciones.html('<td><input type="submit" name="edit" class="editar boton boton-verde" value="Modificar">' +
+        '<input type="submit" class="eliminar boton boton-rojo" value="Eliminar"></td>' );
     });
 }
 

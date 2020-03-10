@@ -78,18 +78,31 @@ tr{
 }
 
 /*Botones*/
-.boton-azul {
+.boton {
     padding: 0.7rem;
-    background-color:rgb(0, 241, 0);
     border: none;
     border-radius: 0.5rem;
+}
+.boton-azul {
+    background-color:rgb(40, 2, 255);
+}
+.boton-verde {
+    background-color:rgb(0, 241, 0);
+    margin-right: 1rem;
+}
+.boton-rojo {
+    background-color:rgb(241, 0, 0);
 }
 
 /* Aparte */
 table img {
     width: 2rem;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 /*
 .input-icono{
    background-image: url(../img/editar.png);
